@@ -22,7 +22,7 @@ class CryptoCurrencies:
 
         self._api_key = api_key
 
-    def get_timeseries_daily(self, symbol, market, days=None):
+    def get_timeseries_daily(self, symbol, market):
 
         """Return a Pandas object with the daily timeseries of
         the cryptocurrency and market specified.
@@ -30,8 +30,6 @@ class CryptoCurrencies:
             Keyword Arguments:
                 symbol: symbol of CryptoCurrency to be tracked.
                 market: symbol of exchange market to be tracked.
-                days (optional): number of days requested. Limit
-                and Default is 1000.
         """
 
         function = 'DIGITAL_CURRENCY_DAILY'
