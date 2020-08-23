@@ -18,4 +18,8 @@ plot_timeseries: triggers a pyplot object depicting the given data.
 Python script will print the Bitcoin value in USD for the last 10 days and plot the last 1000 when run from the command line.
 
 
-A docker image of the application can also be pulled from the dockerhub repository: drb162/donuts:crypto
+The Dockerfile contains the information used to build an docker image of the application
+
+The docker image of the application can be pulled from the following sources:
+Dockerhub repository: drb162/donuts:crypto 
+Github packages: docker.pkg.github.com/drb162/donuts/crypto:1
