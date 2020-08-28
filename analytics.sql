@@ -19,7 +19,7 @@ FROM (
 --QUESTION 3
 SELECT AVG (time) / 60000 AS avg_time_in_mins
 FROM `dhh-analytics-hiringspace.GoogleAnalyticsSample.ga_sessions_export` t, t.hit
-WHERE eventCategory = 'ios.order_confirmation';
+WHERE eventCategory in ('ios.order_confirmation', android.order_confirmation);
 
 --QUESTION 4
 WITH 
